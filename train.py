@@ -6,7 +6,7 @@ def main():
 
     # 训练参数优化
     results = model.train(
-        data="/kaggle/working/data.yaml",
+        data="/kaggle/working/apexcode/data.yaml",
         epochs=50,              # 由于GPU资源有限，训练周期适当减少
         imgsz=512,              # 更小的图像尺寸，加速训练且适合T4 GPU
         batch=32,               # 减小批次大小以适应T4 GPU显存
